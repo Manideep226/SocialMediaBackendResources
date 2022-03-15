@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\":\"chandrakanth\",\r\n    \"mobile\": 9845378292\r\n}",
+					"raw": "{\r\n    \"name\":\"Rahul Sharma\",\r\n    \"mobile\": 9837466123\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -167,7 +167,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"userid\":7,\r\n    \"groupid\":7,\r\n    \"postContent\":\"2nd post\"\r\n}",
+					"raw": "{\r\n    \"userid\":4,\r\n    \"groupid\":6,\r\n    \"postContent\":\"International Women’s Day is a celebration of gender diversity and a reaffirmation of our commitment to the goal of gender parity.\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -366,6 +366,91 @@
 						"comments",
 						"get",
 						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Users by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/socialmedia/users/getusers?name=rahul",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"socialmedia",
+						"users",
+						"getusers"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "rahul"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Users by multiple parameters",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/socialmedia/users/getusers-miltiple?name=rahul&mobile=9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"socialmedia",
+						"users",
+						"getusers-miltiple"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "rahul"
+						},
+						{
+							"key": "mobile",
+							"value": "9"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Posts by Keyword",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/socialmedia/posts/get-by-keyword?keyword=in",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"socialmedia",
+						"posts",
+						"get-by-keyword"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": "in"
+						}
 					]
 				}
 			},

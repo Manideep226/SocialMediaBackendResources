@@ -108,7 +108,7 @@ CREATE TABLE `postdetails` (
   `groupid` int NOT NULL,
   `postcontent` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -117,7 +117,7 @@ CREATE TABLE `postdetails` (
 
 LOCK TABLES `postdetails` WRITE;
 /*!40000 ALTER TABLE `postdetails` DISABLE KEYS */;
-INSERT INTO `postdetails` VALUES (1,6,7,'Newly joined in RCB Group'),(2,7,7,'2nd post');
+INSERT INTO `postdetails` VALUES (1,6,7,'Newly joined in RCB Group'),(2,7,7,'2nd post'),(3,7,7,'my 3rd post'),(4,4,6,'When I first arrived in Bombay, I knew only two words in English, ‘yes’ and ‘no’. I held on to my dreams of making it big. Socha ki safar bohot lamba hai, par isse taye karna hai. Bohot mehnat ki, mushquilein sahin, phir bhi ubharta chala gaya. '),(5,4,6,'Today, Russians were shelling our position. Mines cut down three big oaks, broke most of the windows in our building, burnt down a bakery nearby, and badly wounded a local cat.'),(6,4,6,'We live in a time where technological developments are happening rapidly. Behind the development of any product, the QA team works tirelessly to ensure quick entry to the market.'),(7,4,6,'International Women’s Day is a celebration of gender diversity and a reaffirmation of our commitment to the goal of gender parity.'),(8,4,6,'International Women’s Day is a celebration of gender diversity and a reaffirmation of our commitment to the goal of gender parity.');
 /*!40000 ALTER TABLE `postdetails` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -131,9 +131,9 @@ DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
-  `mobile_number` bigint NOT NULL,
+  `mobile_number` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -142,7 +142,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (4,'manideep',9889799872),(5,'Ram',9283477852),(6,'Chandra',9283746354),(7,'kiran',9845378292),(8,'varun',9845378292),(9,'chandrakanth',9845378292);
+INSERT INTO `users` VALUES (4,'manideep','9889799872'),(5,'Ram','9283477852'),(6,'Chandra','9283746354'),(7,'kiran','9845378292'),(8,'varun','9845378292'),(9,'chandrakanth','9845378292'),(10,'Rahul','9837466789'),(11,'Rahul Sharma','9837466123');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -155,4 +155,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-03-14 10:27:22
+-- Dump completed on 2022-03-15  9:44:06
